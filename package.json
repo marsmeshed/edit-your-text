@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "npx concurrently \"npm run server\" \"npm run client\"",
-    "start": "npm run build && npm run server",
+    "start": "npm run build && cd server && npm start",
     "server": "node server/server.js",
     "build": "npm --prefix client run build",
     "install": "",
